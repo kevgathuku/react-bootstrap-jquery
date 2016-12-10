@@ -4,7 +4,7 @@ import App from './App';
 import './index.css';
 
 import $ from 'jquery';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 // Bootstrap JS relies on a global varaible.
 // In ES6, all imports are hoisted to the top of the file
@@ -13,7 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // variable. This is why we have to use CommonJS require()
 // here since it doesn't have the hoisting behavior.
 window.jQuery = $;
-require('bootstrap/dist/js/bootstrap.min.js');
+require('bootstrap');
 
 ReactDOM.render(
   <App />,
